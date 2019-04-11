@@ -17,30 +17,22 @@ public class Exercise3 {
 		myList.add("123456789");
 		myList.add("1234567890");
 		
-		int mySize1 = myList.size();
-		for(int n = 0; n < mySize1; n++) {
-			System.out.println(myList.get(n));
-		}
+		System.out.println(myList);
 		
 		removeEvenLength(myList);
 		
 		System.out.println("");
 		
-		int mySize2 = myList.size();
-		for(int n = 0; n < mySize2; n++) {
-			System.out.println(myList.get(n));
-		}
+		System.out.println(myList);
 
 	}
 	
 	public static ArrayList<String> removeEvenLength(ArrayList<String> myList) {
 		
-		int mySize = myList.size();
-		for(int n = 0; n < mySize; n++) {
+		for(int n = 0; n < myList.size(); n++) {
 			String myString = myList.get(n);
 			int myStringLength = myString.length();
 			if(myStringLength % 2 == 0) {
-				mySize --;
 				myList.remove(n);
 			}
 		}
