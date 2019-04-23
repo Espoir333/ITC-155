@@ -4,7 +4,7 @@ import java.util.TreeSet;
 public class Exercise6 {
 
 	public static void main(String[] args) {
-		ArrayList<Integer> myList = new ArrayList();
+		ArrayList<Integer> myList = new ArrayList<Integer>();
 		myList.add(1);
 		myList.add(2);
 		myList.add(3);
@@ -12,14 +12,15 @@ public class Exercise6 {
 		myList.add(5);
 		myList.add(6);
 		myList.add(6);
+		myList.add(3);
+		myList.add(27);
 
+		System.out.println("The number of unique values in this array is "+countUnique(myList)+".");
 	}
 	
 	public static int countUnique(ArrayList<Integer> myList) {
-		TreeSet<Integer> mySet = new TreeSet();
-		myList.
-		
-		return 0;
+		TreeSet<Integer> mySet = new TreeSet<Integer>(myList);
+		return mySet.size();
 	}
 
 }
