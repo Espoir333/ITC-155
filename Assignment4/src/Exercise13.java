@@ -17,7 +17,7 @@ public class Exercise13 {
 		
 	}
 	
-	public static boolean isUnique(TreeMap<String, String> myMap) {
+	public static boolean isUnique(Map<String, String> myMap) {
 		TreeSet<String> mySet = new TreeSet<String>(myMap.values());
 		int mapSize = myMap.size();
 		int setSize = mySet.size();
