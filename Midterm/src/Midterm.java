@@ -23,7 +23,7 @@ public class Midterm {
 		Jennifer Villacis 
 		Joanna Gromadzka
 		
-		mystery2
+		mystery1
 		1 2 6 8
 		10 30 40 20 60 50
 		-4 1 25 4 16 9 64 36 49
