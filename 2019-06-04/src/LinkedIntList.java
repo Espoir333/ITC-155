@@ -80,4 +80,22 @@ public class LinkedIntList {
 		}
 	}
 	
+	public boolean isSorted() {
+		if(front == null) {
+			return true;
+		}
+		ListNode current = front;
+		int maxValue = current.data;
+		while(current != null) {
+			int newValue = current.data;
+			current = current.next;
+			if(newValue >= maxValue) {
+				maxValue = newValue;
+			} else {
+				return false;
+			}
+		}
+		return true;
+	}
+	
 }
