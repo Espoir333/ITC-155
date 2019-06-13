@@ -11,6 +11,8 @@ public class IntTreeClient {
 		t.printPostorder();
 
 		t.printSideways();
+		
+		System.out.println("Empty:"+t.countEmpty());
 	}
 
 }
