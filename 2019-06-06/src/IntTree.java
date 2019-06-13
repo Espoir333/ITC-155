@@ -67,6 +67,31 @@ public class IntTree {
 		}
 	}
 	
+	//Counting the empty parts of the tree
+	public int countEmpty() {
+		if(overallRoot != null) {
+			int count = countEmpty(overallRoot);
+			return count;
+		} else {
+			return(1);
+			}
+	}
+	
+	private int countEmpty(IntTreeNode root) {
+		int count = 0;
+		if (root.left != null) {
+			count += countEmpty(root.left);
+		} else {
+			count ++;
+			}
+		if(root.right != null) {
+			count += countEmpty(root.right);
+		} else {
+			count ++;
+		}
+		return count;
+	}
+	
 	//Print in reversed order the tree indenting each line to the given level to show node depth
 	//Print right to left 
 	public void printSideways() {
